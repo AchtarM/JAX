@@ -1,0 +1,118 @@
+*{
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*General*/
+
+.my-a{
+text-decoration: none;
+}
+
+.my-mg{
+  margin-top: 10px;
+}
+
+/*Login Section*/
+
+.form-position{
+  position: absolute;
+  top: 50%;
+  left :50%;
+  transform: translate(-50%,-50%);
+}
+
+.my-btn{
+  padding : 10px;
+  width: 35%;
+}
+.bnt-center{
+  margin: 20px -80px; 
+  position:relative;
+  top:50%; 
+  left:50%;
+}
+
+form {
+  width : 300px;
+ 
+}
+
+
+.headLine{
+  font-family: 'Calligraffitti', cursive;
+  text-align: center;
+  font-size: 65px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+/*Navbar Section*/
+
+.logo{
+  font-family: 'Calligraffitti', cursive;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.icon-sz{
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.dropDown{
+  position: relative;
+}
+
+.dropDown .dropDown-list{
+  position: absolute;
+  width: 120px;
+  background-color: rgb(243, 243, 243);
+  padding: 15px;
+  top: 45px;
+  right: -1px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+  display: flex;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+
+.dropDown .dropDown-list .log-link{
+  color:#dd5046;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  
+}
+
+.dropDown .dropDown-list .log-link:hover{
+  text-decoration: none;
+  color: #dd5046;
+}
+
+.dropDown:hover  .dropDown-list{
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropDown-list .singOut-icon{
+  margin-right : 10px;
+  font-size: 25px;
+  color : #dd5046;
+  float: left;
+}
+
