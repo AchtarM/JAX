@@ -32,7 +32,7 @@ import {useHistory} from "react-router-dom";
         localStorage.setItem("password" , userInfo.password);
         
         /*Redirecting the page*/
-        history.push(`/loginUser`);
+        history.push(`/`);
    }
 
 
@@ -40,7 +40,7 @@ import {useHistory} from "react-router-dom";
        
        <div className="form-position">
           <div>
-             <h1 className="headLine">Kite</h1>
+             <h1 className="headLine">JAX</h1>
              <form onSubmit = {submitHandler}>
                 <div className =  "inputs">
                    <label>Username</label>
@@ -69,7 +69,7 @@ import {useHistory} from "react-router-dom";
                   </div>
                 </div>
              </form>
-           </div>
+           </div>        
        </div>
     )
  }
