@@ -7,19 +7,29 @@ import LoginUser from './components/loginUser';
 import SingUpUser from "./components/singupUser";
 import DashBord from "./components/dashBoard";
 import {BrowserRouter as Router,Switch,Route} from  'react-router-dom';
+import Navbar from './components/Navbar';
 
-function App() {
-  return (
-    <Router>
+
+
+/*<Router>
           <div className="App ">
 
             <Switch>
-               <Route path = "/" exact component = {LoginUser} />
+               <Route path = "/" exact component = {DashBord} />
                <Route path = "/SingUpUser"  component = {SingUpUser} />
                <Route path = "/dashBoard"  component = {DashBord} />
              </Switch> 
           </div>
-      </Router>
+   </Router> */
+
+function App() {
+  return (
+    <div className="App "> 
+      <Navbar/>
+      <DashBord />
+    </div>
+
+  
   );
 }
 
