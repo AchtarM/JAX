@@ -3,8 +3,7 @@ import React , {useState,useEffect} from "react";
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
-
-
+import Navbar from './Navbar';
 
 /*Adding icons to the liberary*/
 library.add(faHeart);
@@ -48,24 +47,26 @@ function DashBord() {
    
 
     return (
-        <div class="container">
-          
-            {
-                productsDb.map( item =>
-                    <div key = {item.id} class="product">
-                        <div class="product-img" ><img src= {item.imageUrl} alt="headphone"/></div>
-                        <div class="product-info">
-                           <a   class="item-name" onclick={() => setSaveId(item.id)}>{item.titel}</a>
-                           <p class="item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                           <span class="item-size">size : {item.size}</span>
-                       </div>
-                       <div class="product-action">
-                           <button class="add-btn" ><span>Add to cart</span></button>
-                           <FontAwesomeIcon icon={faHeart} className = "singOut-icon" />
-                           <i class="fav far fa-heart"></i>
-                       </div>
-                    </div>
-               )}
+        <div  class="container">
+            <Navbar/>
+          <div >
+              {
+                  productsDb.map( item =>
+                      <div key = {item.id} class="product">
+                          <div class="product-img" ><img src= {item.imageUrl} alt="headphone"/></div>
+                          <div class="product-info">
+                             <a   class="item-name" onclick={() => setSaveId(item.id)}>{item.titel}</a>
+                             <p class="item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                             <span class="item-size">size : {item.size}</span>
+                         </div>
+                         <div class="product-action">
+                             <button class="add-btn" ><span>Add to cart</span></button>
+                             <FontAwesomeIcon icon={faHeart} className = "singOut-icon" />
+                             <i class="fav far fa-heart"></i>
+                         </div>
+                      </div>
+                 )}
+        </div>
       </div>
     )
 }

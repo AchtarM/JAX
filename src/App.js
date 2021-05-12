@@ -11,22 +11,21 @@ import Navbar from './components/Navbar';
 
 
 
-/*<Router>
-          <div className="App ">
-
-            <Switch>
-               <Route path = "/" exact component = {DashBord} />
-               <Route path = "/SingUpUser"  component = {SingUpUser} />
-               <Route path = "/dashBoard"  component = {DashBord} />
-             </Switch> 
-          </div>
-   </Router> */
+/* */
 
 function App() {
   return (
     <div className="App "> 
-      <Navbar/>
-      <DashBord />
+    <Router>
+          <div className="App ">
+
+            <Switch>
+               <Route path = "/" exact component = {LoginUser} />
+               <Route path = "/SingUpUser"  component = {SingUpUser} />
+               <Route path = "/dashBoard"  component = {DashBord} />
+             </Switch> 
+          </div>
+   </Router>
     </div>
 
   
